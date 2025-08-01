@@ -577,6 +577,62 @@
             font-size: 0.9rem;
         }
 
+        .videos {
+            background-color: var(--light-color);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .video-card p.date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .video-container video {
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-links a:hover {
+            opacity: 0.8;
+        }
+
+        @media screen and (max-width: 768px) {
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Mobile Responsive */
         @media screen and (max-width: 768px) {
             .profile h1 {
@@ -919,6 +975,32 @@
             </div>
         </div>
     </section>
+    <section id="videos" class="videos">
+    <div class="container">
+        <h2 class="section-title">Project Videos</h2>
+        <div class="videos-grid">
+            <div class="video-card">
+                <h3>TurtleBot4 Navigation Testing</h3>
+                <p class="date">2024</p>
+                <div class="video-container" style="margin: 1rem 0;">
+                    <video width="100%" max-width="600px" controls>
+                        <source src="./assets/Batch_test_turtle_bot_shorter.mp4" type="video/mp4">
+                        <p>Your browser doesn't support HTML video. <a href="./assets/Batch_test_turtle_bot_shorter.mp4">Download the video</a> instead.</p>
+                    </video>
+                </div>
+                <p><strong>Description:</strong> Comprehensive demonstration of TurtleBot4 navigation algorithms and batch testing protocols in various scenarios.</p>
+                <div class="video-links" style="margin-top: 1rem;">
+                    <a href="https://github.com/Murdism/turtlebot4-navigation-testing" target="_blank" style="color: var(--primary-color); text-decoration: none; margin-right: 1rem;">
+                        <i class="fab fa-github"></i> View Repository
+                    </a>
+                    <a href="./assets/Batch_test_turtle_bot_shorter.mp4" download style="color: var(--accent-color); text-decoration: none;">
+                        <i class="fas fa-download"></i> Download Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="publications" class="publications">
         <div class="container">
