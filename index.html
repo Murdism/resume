@@ -430,6 +430,35 @@
             font-weight: bold;
         }
 
+        .project-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .project-links a.demo-link {
+            color: var(--accent-color);
+        }
+
+        .project-links a.demo-link:hover {
+            color: var(--primary-color);
+        }
+
         /* Publications Section */
         .publications {
             background-color: var(--light-color);
@@ -823,6 +852,26 @@
             <h2 class="section-title">Projects & Research</h2>
             <div class="projects-grid">
                 <div class="project-card">
+                    <h3>TurtleBot4 Navigation Testing</h3>
+                    <p class="date">2024</p>
+                    <ul>
+                        <li>Developed comprehensive navigation testing framework for TurtleBot4 autonomous robot</li>
+                        <li>Implemented batch testing protocols for autonomous navigation algorithms</li>
+                        <li>Created ROS2-based testing infrastructure with real-time performance monitoring</li>
+                        <li>Designed validation pipelines for navigation stack reliability and safety</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Murdism/turtlebot4-navigation-testing" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="https://github.com/Murdism/turtlebot4-navigation-testing/blob/main/demo/Batch_test_turtle_bot.mp4" target="_blank" class="demo-link">
+                            <i class="fas fa-play-circle"></i>
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
                     <h3>Autonomous Vehicle Perception System</h3>
                     <p class="date">2023</p>
                     <ul>
@@ -906,4 +955,51 @@
         </div>
     </section>
 
-    <section id="awards
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-container">
+                <div class="award-category">
+                    <h3>Academic Excellence</h3>
+                    <ul class="award-list">
+                        <li>Graduate with Excellent with Highest Honor (BSc Computer Engineering)</li>
+                        <li>High Academic Achievement (MSc Computer Science - GPA 3.93/4.0)</li>
+                        <li>Khalifa University Scholarship Recipient</li>
+                    </ul>
+                </div>
+                <div class="award-category">
+                    <h3>Professional Recognition</h3>
+                    <ul class="award-list">
+                        <li>A2RL Team Representative - Abu Dhabi Autonomous Racing League 2024</li>
+                        <li>Research Publication in Top-Tier Conferences</li>
+                        <li>Conference Presenter and Exhibitor at International Venues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Let's Connect</h3>
+                <div class="social-links">
+                    <a href="mailto:muradsmebrahtu@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=pHrzj5kAAAAJ" target="_blank" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://github.com/Murdism" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/muradmebrahtu" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2024 Murad Smretab Mebrahtu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
